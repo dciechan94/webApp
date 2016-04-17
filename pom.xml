@@ -16,12 +16,27 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
-                    <webappDirectory>./out/</webappDirectory>
+
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                        </manifest>
+                    </archive>
+
+                    <webResources>
+                        <resource>
+                            <directory>./web</directory>
+                        </resource>
+                    </webResources>
+
                     <webXml>web\WEB-INF\web.xml</webXml>
                     <warName>project</warName>
+
                 </configuration>
 
             </plugin>
+
         </plugins>
     </build>
 
