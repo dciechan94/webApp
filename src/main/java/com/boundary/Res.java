@@ -21,36 +21,6 @@ public class Res {
 		System.out.println("Shiiiiiiiit");
 		System.out.println("Shiiiiiiiit");
 		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
-		System.out.println("Shiiiiiiiit");
 		
 		return "Helloooo";
 	}

@@ -11,14 +11,12 @@ import java.util.Map;
 
 public class HttpRequestsTest {
 
-	public static String BASE_URL = "http://localhost:8080/tai";
-
 	@Test
 	public void getRequestTest() {
 		CustomHttpRequestBuilder request = new CustomHttpRequestBuilder();
 		CustomHttpResponse response = null;
 		
-		request.url(BASE_URL + "/resttest/get")
+		request.url(App2.BASE_URL + "/resttest/get")
 			   .method("GET")
 			   .header("Content-Type", "text/plain");
 		
@@ -34,7 +32,7 @@ public class HttpRequestsTest {
 		CustomHttpRequestBuilder request = new CustomHttpRequestBuilder();
 		CustomHttpResponse response = null;
 		
-		request.url(BASE_URL + "/resttest/post")
+		request.url(App2.BASE_URL + "/resttest/post")
 			   .method("POST")
 			   .header("Content-Type", "text/plain")
 			   .content("someContent");
@@ -51,7 +49,7 @@ public class HttpRequestsTest {
 		CustomHttpRequestBuilder request = new CustomHttpRequestBuilder();
 		CustomHttpResponse response = null;
 		
-		request.url(BASE_URL + "/resttest/put")
+		request.url(App2.BASE_URL + "/resttest/put")
 			   .method("PUT")
 			   .header("Content-Type", "text/plain");
 		
@@ -70,7 +68,7 @@ public class HttpRequestsTest {
 		Map<String, String> headers = Maps.newHashMap();
 		headers.put("Content-Type", "text/plain");
 		
-		request.url(BASE_URL + "/resttest/delete")
+		request.url(App2.BASE_URL + "/resttest/delete")
 			   .method("DELETE")
 			   .header("Content-Type", "text/plain");
 		

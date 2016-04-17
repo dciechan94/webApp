@@ -13,7 +13,7 @@ public class SecurityTest {
 		CustomHttpRequest.CustomHttpRequestBuilder request = new CustomHttpRequest.CustomHttpRequestBuilder();
 		CustomHttpResponse response = null;
 		
-		request.url(HttpRequestsTest.BASE_URL + "/resttest/permit")
+		request.url(App2.BASE_URL + "/resttest/permit")
 			   .method("GET")
 			   .header("Content-Type", "text/plain");
 		
@@ -29,7 +29,7 @@ public class SecurityTest {
 		CustomHttpRequest.CustomHttpRequestBuilder request = new CustomHttpRequest.CustomHttpRequestBuilder();
 		CustomHttpResponse response = null;
 		
-		request.url(HttpRequestsTest.BASE_URL + "/resttest/deny")
+		request.url(App2.BASE_URL + "/resttest/deny")
 			   .method("GET")
 			   .header("Content-Type", "text/plain");
 		

@@ -12,12 +12,27 @@ public class InjectTest {
 		CustomHttpRequest.CustomHttpRequestBuilder request = new CustomHttpRequest.CustomHttpRequestBuilder();
 		CustomHttpResponse response = null;
 		
-		request.url(HttpRequestsTest.BASE_URL + "/resttest/inject")
+		request.url(App2.BASE_URL + "/resttest/inject")
 			   .method("GET")
 			   .header("Content-Type", "text/plain");
 		
 		response = HttpRequestService.sendRequest(request.build());
 		
+		Assertions.assertThat(response).isNotNull();
+		Assertions.assertThat(response.getContent()).isEqualTo("Injected");
+	}
+
+	@Test
+	public void checkLoggerInjection() {
+		CustomHttpRequest.CustomHttpRequestBuilder request = new CustomHttpRequest.CustomHttpRequestBuilder();
+		CustomHttpResponse response = null;
+
+		request.url(App2.BASE_URL + "/resttest/injectLogger")
+				.method("GET")
+				.header("Content-Type", "text/plain");
+
+		response = HttpRequestService.sendRequest(request.build());
+
 		Assertions.assertThat(response).isNotNull();
 		Assertions.assertThat(response.getContent()).isEqualTo("Injected");
 	}

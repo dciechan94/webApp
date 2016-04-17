@@ -1,5 +1,6 @@
 package com.boundary;
 
+import javax.annotation.security.PermitAll;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -15,7 +16,7 @@ public class Res2 {
 	
 	@GET
 	//@Path("/")
-	//@PermitAll
+	@PermitAll
 	public StrDTO func() {
 		return new StrDTO("Hello");
 	}

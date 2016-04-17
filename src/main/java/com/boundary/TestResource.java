@@ -1,5 +1,6 @@
 package com.boundary;
 
+import javax.annotation.security.DenyAll;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
@@ -48,7 +49,7 @@ public class TestResource {
 	
 	@GET
 	@Path("/deny")
-	//@DenyAll
+	@DenyAll
 	public String denyAllRequest() {
 		return "Allowed";
 	}

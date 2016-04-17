@@ -13,7 +13,7 @@ public class ProducesJsonTest {
 		CustomHttpRequest.CustomHttpRequestBuilder request = new CustomHttpRequest.CustomHttpRequestBuilder();
 		CustomHttpResponse response = null;
 		
-		request.url(HttpRequestsTest.BASE_URL + "/resttest/json")
+		request.url(App2.BASE_URL + "/resttest/json")
 				.method("GET")
 			   .header("Content-Type", "text/plain");
 		
